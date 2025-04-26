@@ -2,6 +2,32 @@
 ```
 requirements.txt
 pytorch -> torch로 수정했음
+
+
+!git clone [https://github.com/mk-minchul/AdaFace.git](https://github.com/mk-minchul/AdaFace.git)
+
+!pip install --upgrade pip
+%cd ./AdaFace
+
+%%writefile ./requirements.txt
+pytorch-lightning==1.8.6
+torch<=1.13.1
+tqdm
+bcolz-zipline
+prettytable
+menpo
+mxnet
+opencv-python
+
+!pip install -r requirements.txt
+
+!pip install torchvision==0.14.1 torchaudio==0.13.1 --no-cache-dir
+
+!mkdir pretrained
+
+!cp /kaggle/input/adaface-ir50/adaface_ir50_ms1mv2.ckpt ./pretrained
+
+!python inference.py
 ```
 
 ms1mv2 dataset을 학습한 pretrained model 선택
