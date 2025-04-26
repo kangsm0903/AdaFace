@@ -1,3 +1,11 @@
+# Kaggle에서 실습 진행
+```
+requirements.txt
+pytorch -> torch로 수정했음
+```
+
+ms1mv2 dataset을 학습한 pretrained model 선택
+
 # AdaFace: Quality Adaptive Margin for Face Recognition
 
 Official github repository for AdaFace: Quality Adaptive Margin for Face Recognition. 
